@@ -3,15 +3,15 @@
     public class Devise
     {
         private int id;
-        private string nomdevise;
+        private string? nomdevise;
         private double taux;
         public int Id
         {
             get { return id; }
             set { id = value; }
         }
-
-        public string NomDevise
+        [Required]
+        public string? NomDevise
         {
             get { return nomdevise; }
             set { nomdevise = value; }
