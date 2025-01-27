@@ -22,14 +22,14 @@ namespace WSConvertisseur.Controllers
         }
         // GET: api/<DeviseController>
         [HttpGet]
-        public IEnumerable<Devise> Get()
+        public IEnumerable<Devise> GetAll()
         {
             return devises;
         }
 
         // GET api/<DeviseController>/5
         [HttpGet("{id}")]
-        public string GetAll(int id)
+        public string Get(int id)
         {
             return "value";
         }
