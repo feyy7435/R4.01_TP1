@@ -3,31 +3,28 @@
     public class Devise
     {
         private int id;
-
+        private string nomdevise;
+        private double taux;
         public int Id
         {
             get { return id; }
             set { id = value; }
         }
 
-        private int nomdevise;
-
-        public int NomDevise
+        public string NomDevise
         {
             get { return nomdevise; }
             set { nomdevise = value; }
         }
 
-        private int taux;
-
-        public int Taux
+        public double Taux
         {
             get { return taux; }
             set { taux = value; }
         }
         public Devise(){ }
 
-        public Devise(int id, int nomdevise, int taux)
+        public Devise(int id, string nomdevise, double taux)
         {
             this.id = id;
             this.nomdevise = nomdevise;
