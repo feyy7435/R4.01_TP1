@@ -11,7 +11,12 @@ namespace WSConvertisseur
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(
+                doc =>
+                {
+                    var xmlFile = Path.ChangeExtension(typeof(Program).Assembly.Location, ".xml");
+                    doc.IncludeXmlComments(xmlFile);
+                });
 
             var app = builder.Build();
 
