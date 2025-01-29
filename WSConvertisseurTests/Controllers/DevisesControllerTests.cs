@@ -11,7 +11,7 @@ using WSConvertisseur.Models;
 namespace WSConvertisseur.Controllers.Tests
 {
     [TestClass()]
-    public class DevisesControllerTests
+    public class DevisesControllerTests 
     {
         [TestMethod()]
         public void GetAllTest()
